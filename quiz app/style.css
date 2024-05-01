@@ -1,0 +1,327 @@
+/* css common for all */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+
+      .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+}
+
+.container{
+  
+    text-align: center;
+    height: max-content;
+    width: 650px;
+    border: 1px solid rgb(131, 131, 137);
+}
+
+
+button{
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+}
+
+
+/* ...................ENDS .....................*/
+
+/*.......... for index page particularly ........... */
+#main .container .user-details h2{
+    color: #1ea8e7;
+    margin: 0.5rem;
+}
+
+#main .container{
+    padding: 2rem;
+}
+
+#main .user-details .Input{
+    margin: 1rem;
+}
+
+#main .user-details .Input .input{
+    width: 22rem;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+#main .user-details button{
+    background-color: #1ea8e7;
+    color: white;
+    width: 4.5rem;
+}
+
+#main .user-details p{
+    margin-bottom: 0.4rem;
+}
+
+#main .categories h2{
+    color: #1ea8e7;
+    margin: 0.4rem;
+
+}
+
+#main .categories .options{
+    display: grid;
+    grid-template-areas: 'a a';
+    row-gap: 0.7rem;
+    column-gap: 0.5rem;
+}
+
+#main .categories .options button{
+    text-decoration: none;
+    border: 1px solid rgb(164, 215, 237);
+    background-color: rgb(235, 248, 254);
+    color: black;
+    border-radius: 0.4rem;
+}
+
+/* .................index styling ends here .................*/
+
+/* ...................Questions styling starts ............... */
+
+#Questions .container {
+    height: 400px;
+    box-sizing: border-box;
+    position: relative;
+    height: fit-content;
+    padding: 1rem;
+}
+
+#Questions .container .time-score{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
+}
+
+#Questions .container .time-score #time{
+    border: 1px solid rgb(80, 181, 231);
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: rgb(80, 181, 231);
+}
+
+#Questions .container .no-of-question{
+    border: 2px solid rgb(80, 181, 231);
+    color: rgb(83, 164, 229) ;
+    border-radius: 50%;
+    max-width: fit-content;
+    padding: 0.3rem;
+    position:absolute;
+    top: 7.3rem;
+    right: 19rem;
+
+}
+
+#Questions .container #questions{
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid rgb(170, 169, 170);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#Questions .container .option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Questions .container .opt {
+    display: none;
+}
+
+/* Style the labels to look like buttons */
+#Questions .container .option label {
+    display: inline-block;
+    width: 30%;
+    height: fit-content;
+    margin: 12px;
+    color: rgb(57, 189, 245) ;
+    border: 3px solid rgb(166, 211, 231);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+} */
+
+.option:hover input.opt + label {
+  background-color: rgb(30, 168, 231);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Additional style to reset the background color and text color when not hovered */
+.option input.opt + label {
+  background-color: transparent;
+  color: initial;
+}
+
+
+
+/*,,,,................ ends here    ................ */
+
+
+/*........... result start here ................*/
+
+#results .container{
+    /* height: 400px; */
+    width: 600px;
+    box-sizing: border-box;
+    padding: 2rem;
+    font-size:2rem;
+
+}
+
+#results .container .heading{
+    font-size:2.5rem;
+    padding: 1rem;
+    color: #1ea8e7;
+
+}
+
+#results .container .Correct,
+#results .container .Attempt,
+#results .container .Questions,
+#results .container .Time,
+#results .container .name-container{
+    padding-bottom:1rem;
+}
+
+#results .container .name-container #playerName{
+    padding:1rem;
+}
+
+#results .container .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap :4rem;
+    padding: 1rem;
+}
+
+#results .container .button button{
+    color: #fff;
+    background-color: #1ea8e7;
+    padding: 1rem;
+    border-radius: 20px;
+}

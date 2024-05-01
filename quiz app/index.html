@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--       .............. for main page      ..........       -->
+    <div id="main">
+        <div class="container">
+            <div class="user-details">
+                <img src="image/logo.png" alt="logo">
+                <h2>Hello user!</h2>
+                <h3>Enter your name to continue the Quiz</h3>
+                <div class="Input">
+                    <input id="inputname" required type="text" placeholder="ENTER YOUR NAME....">
+                    <button id="submit-name" onclick="saveName()">ENTER</button>
+                </div>
+                <P>You'll have 10 seconds to answer each questions</P>    
+            </div>
+            <hr />
+            <div class="categories">
+                <h2>Select Catogory</h2>
+                <div class="options">
+                    <button onclick="Pipes()" id="button1" class="Pipes" >Pipes And Cistern</button>
+                    <button onclick="Probability() "  id="button2"class="Probability" >Probability</button>
+                    <button onclick="Profit()"  id="button3" class="Profit" >Profit And Loss</button>
+                    <button onclick="Ages()"  id="button4" class="Ages" >Problem On Ages</button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--       ...........main ends  ................-->
+
+    <!--      ............Questions starts  .............-->
+                <!-- initially hidden -->
+    <div id="Questions" style="display: none;">
+        <div class="container">
+            <h2 id="heading"></h2>
+            <div class="time-score">
+                <div id="time">
+    
+                </div>
+                <div class="score">
+                    <p>SCORE: <span id="score-display">0</span></p>
+                </div>
+            </div>
+    
+            <div class="no-of-question">
+                <span id="Q-no"></span>/10
+            </div>
+    
+            <div id="questions">hgif
+            </div>
+    
+            <div class="option">
+                <input value="a" type="radio" class="opt" name="option" id="option1"></input>
+                <label for="option1">option</label>
+                <input value="b" type="radio" class="opt" name="option" id="option2"></input>
+                <label for="option2">option</label>
+                <input value="c" type="radio" class="opt" name="option" id="option3"></input>
+                <label for="option3">option</label>
+                <input value="d" type="radio" class="opt" name="option" id="option4"></input>
+                <label for="option4">option</label>
+            </div>
+            
+            <div class="next-q">
+                <button class="next" onclick="submitQuiz()">Next Questions</button>
+            </div>
+            
+    
+        </div>
+    </div>
+
+    <!--  ...........question div ends here .................-->
+
+    <!-- ..........results starts..............  -->
+                 <!-- initially hidden -->
+    <div id="results" style="display: none;">
+        <div class="container">
+            <h2 class="heading">Quiz Result</h2>
+            <div class="name-container">
+                <span id="playerName"><b></b></span>Your result is : <span id="result"><b></b></span>
+            </div>
+    
+            <div class="Time">
+                Total Time Taken : <span id="times"><b>00</b></span>
+            </div>
+    
+            <div class="Questions">
+                Total Questions: <b>10</b>
+            </div>
+            
+            <div class="Attempt">
+                Attempt: <span id="attempt" ><b></b></span>
+            </div>
+    
+            <div class="Correct">
+                Correct: <span id="correct" ><b></b></span>
+            </div>
+    
+            <div class="Wrong">
+                Wrong: <span id="wrong" ><b></b></span>
+            </div>
+            <div class="button">
+                <button onclick="startAgain()">Start Again</button>
+                <button onclick="goTOHome()">Go TO Home</button>
+            </div>
+           
+
+
+        </div>
+
+    </div>
+
+    <!-- ..............resullts ends here................ -->
+    
+
+
+
+
+    <script src="./script.js"></script>
+
+    
+    
+</body>
+</html>
